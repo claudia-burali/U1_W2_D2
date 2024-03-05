@@ -67,13 +67,16 @@ else  {console.log('Il totale da pagare è', cart+shipping )}
   Alla fine mostra il risultato in console.
 */
 
-/*let r = 4
+let r = 4
 let t = 6
 let h = 7
 if (r<t && t<h) {console.log('Ecco i numeri in ordine decrescente', h, t, r)}
-else if (r>t && t<h) {console.log('Ecco i numeri in ordine decrescente', r, t, h)}
-else if (r>t && t>h) {console.log('Ecco i numeri in ordine decrescente', r, h, t)}
-else if (r<t && t>h) {console.log('Ecco i numeri in ordine decrescente', r, h, t)}
+else if (r>t && t>h) {console.log('Ecco i numeri in ordine decrescente', r, t, h)}
+else if (r>t && t<h && h<r) {console.log('Ecco i numeri in ordine decrescente', r, h, t)}
+else if (r>t && t<h && h>r) {console.log('Ecco i numeri in ordine decrescente', h, r, t)}
+else if (r<t && t>h && h<r) {console.log('Ecco i numeri in ordine decrescente', t, r, h)}
+else if (r<t && t>h && r<h) {console.log('Ecco i numeri in ordine decrescente', t, h, r)}
+
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
